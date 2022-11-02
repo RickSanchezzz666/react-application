@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 5fr;
+}
+
+.navigate {
+  height: 100%;
+  background-color: white;
+}
