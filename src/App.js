@@ -1,12 +1,12 @@
 import './App.css';
-import Component1 from './components/cards';
-import Component2 from './components/navigation';
+import Navigation from './components/navigation';
+import Content from './components/content';
 
-function App() {
+function App () {
   return (
-    <div className="container">
-    <div className='navigate'><Component2 /></div>
-    <div className="Cards"><Component1 /></div>
+    <div className="App">
+      <Navigation />
+      <Content />
     </div>
   );
 }

@@ -9,7 +9,6 @@ import email from './imgs/5e4b1a8c95e4912fad265ab9_social-30.svg';
 function Navigation () {
  return (
   <nav>
-    <div className="nav">
    <div className="menu-title">Milton</div>
    <hr />
    <div className="menu-text-block">
@@ -29,8 +28,7 @@ function Navigation () {
     <img src={linkedin} alt='' />
     <img src={email} alt='' />
    </div>
-   <span>Built with <a href="">Webflow</a></span>
-   </div>
+   <span>Built with Webflow</span>
   </nav>
  );
 }

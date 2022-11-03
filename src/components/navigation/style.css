@@ -1,79 +1,63 @@
 nav {
-    height: 100vh;
-    padding: 50px;
-    color: #aaa;
-    box-sizing: border-box;
-  }
+  width: 30%;
+  height: 100vh;
+  padding: 30px;
+  color: #aaa;
+  box-sizing: border-box;
+}
+.menu-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: black;
+}
+hr {
+  width: 35%;
+  margin: 25px 0;
+  color: rgb(255, 255, 229);
+}
+.menu-text-block {
+  font-size: 14px;
+  margin: 20px 0;
+  line-height: 145%;
+}
 
-  .nav {
-    position: fixed;
-  }
+.menu {
+  margin: 20px 0;
+  padding: 0;
+}
 
-  a {
-    text-decoration: none;
-    color: black;
-    opacity: 0.4;
-  }
+.menu > li {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.35s;
+  font-weight: bold;
+}
 
-  a:hover {
-    opacity: 0.9;
-  }
+.menu > li:hover {
+  color: black;
+}
 
-  .menu-title {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: black;
-    cursor: pointer;
-  }
-  hr {
-    width: 15%;
-    margin: 25px 0;
-    color: rgb(255, 255, 229);
-  }
-  .menu-text-block {
-    font-size: 14px;
-    margin: 20px 0;
-    width: 38%;
-    line-height: 145%;
-  }
-  
-  .menu {
-    margin: 20px 0;
-    padding: 0;
-  }
-  
-  .menu > li {
-    list-style-type: none;
-    text-transform: uppercase;
-    margin: 10px 0;
-    font-size: 12px;
-    cursor: pointer;
-    transition: 0.35s;
-    font-weight: bold;
-  }
-  
-  .menu > li:hover {
-    color: black;
-  }
-  
-  .menu > li.selected {
-    color: black;
-  }
-  
-  .media-icons {
-    width: 25px;
-    display: flex;
-    column-gap: 10px;
-    margin: 10px 0;
-  }
-  
-  .media-icons > img {
-    transition: 0.25s;
-    cursor: pointer;
-    opacity: 0.40;
-  }
-  
-  .media-icons > img:hover {
-    opacity: 1;
-  }
-  
+.menu > li.selected {
+  color: black;
+}
+
+.media-icons {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  margin: 10px 0;
+}
+
+.media-icons > img {
+  transition: 0.25s;
+  cursor: pointer;
+  opacity: 0.55;
+}
+
+.media-icons > img:hover {
+  opacity: 1;
+}
