@@ -6,24 +6,16 @@
 }
 
 .card-content-text {
-  font-size: 15px;
+  font-size: 20px;
   margin: 10px;
-  color: rgb(37, 37, 37);
+  color: rgb(74, 73, 73);
 }
 
-.card-content-sub-text {
-  padding-left: 15px;
-  font-size: 17.5px;
-}
+/* .card-content-list li {
+  list-style-type: kannada;
+} */
 
 .padding-20 {
   padding: 20px;
   box-sizing: border-box;
-}
-
-.hr {
-  width: 5px;
-  height: 66px;
-  background-color: black;
-  opacity: 0.25;
 }

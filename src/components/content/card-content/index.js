@@ -26,21 +26,6 @@ const getListComponent = (elems) => {
  );
 };
 
-const getSubBlock = (text) => {
-    return(
-        <table>
-            <tr>
-                <td>
-                <hr className="hr"></hr>
-                </td>
-                <td>
-                    <div className="card-content-sub-text">{text}</div>
-                </td>
-            </tr>
-        </table>
-    );
-};
-
 
 function CardContent (props) {
  console.log(props);
@@ -62,9 +47,6 @@ function CardContent (props) {
       }
       case 'list': {
        return getListComponent(elem.elems);
-      }
-      case 'sub-block': {
-       return getSubBlock(elem.text);
       }
       default: { }
      }

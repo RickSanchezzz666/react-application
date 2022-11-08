@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, BrowserRouter } from 'react-router-dom';
 import './style.css';
 import facebook from './imgs/5e4b1a8c95e491addf265a8e_social-03.svg';
 import instagram from './imgs/5e4b1a8c95e491834e265b00_social-07.svg';
@@ -16,9 +17,9 @@ function Navigation () {
    </div>
    <hr />
    <ul className="menu">
-    <li>home</li>
-    <li>about</li>
-    <li>contact</li>
+    <li><Link className="link" to="/" >home</Link></li>
+    <li><Link className="link" to="/about" >about</Link></li>
+    <li><Link className="link" to="/contact" >contact</Link></li>
    </ul>
    <hr />
    <div className="media-icons">

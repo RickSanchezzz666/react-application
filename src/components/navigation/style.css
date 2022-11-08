@@ -10,6 +10,12 @@ nav {
   margin-bottom: 20px;
   color: black;
 }
+
+.link {
+  color: black;
+  opacity: 0.5;
+}
+
 hr {
   width: 35%;
   margin: 25px 0;
