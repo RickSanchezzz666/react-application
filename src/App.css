@@ -1,3 +1,31 @@
-.App {
-  display: flex;
+body {
+    background-color: #d4d3de;
+}
+
+.page-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./components/imgs/5465904.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-2 {
+    background-image: url('./components/imgs/background.jpg');
+    background-repeat: no-repeat;
+}
+
+.page-3 {
+    background-color: white;
+    height: 290vh;
+}
+
+.page-4 {
+    width: 100%;
+    height: 130vh;
+    background-image: url('./components/imgs/5445590.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

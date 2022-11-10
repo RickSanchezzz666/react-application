@@ -1,0 +1,82 @@
+.content {
+    width: 70%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-left: 1px solid rgb(177, 175, 175);
+    overflow: auto;
+    padding: 20px;
+  }
+
+  .contact {
+    padding-left: 20px;
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #aaa;
+    margin: 15px 0;
+  }
+
+  .contact .title {
+    font-size: 36px;
+    color: black;
+}
+
+.contact .desc {
+    padding-top: 10px;
+    font-size: 14px;
+    color: black;
+    opacity: 0.9;
+  }
+
+  .contact .mini-title {
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.85;
+    color: black;
+  }
+
+  .name {
+    width: 98%;
+    height: 30px;
+    opacity: 0.5;
+    outline-color: #2596be;
+    outline: 1px;
+  }
+
+  .e-mail {
+    width: 98%;
+    height: 30px;
+    opacity: 0.5;
+    outline-color: #2596be;
+    outline: 1px;
+  }
+
+  .message {
+    width: 98%;
+    height: 100px;
+    opacity: 0.5;
+    outline-color: #2596be;
+    outline: 1px;
+  }
+
+  .submit-button {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: black;
+    width: 70px;
+    height: 18px;
+    opacity: 0.3;
+    border-radius: 5px;
+    transition: 0.25s;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    opacity: 0.5;
+    transition: 0.25s;
+}
