@@ -12,7 +12,7 @@ function Nav () {
           }
         });
 
-        let btnContainer = document.getElementById('navBar');
+        /*let btnContainer = document.getElementById('navBar');
         let buttons = btnContainer.getElementsByClassName('btn');
        for(let i = 0; i < buttons.length; i++) {
            buttons[i].addEventListener('click', function() {
@@ -20,9 +20,12 @@ function Nav () {
                current[0].className = current[0].className.replace('active');
                this.className += ' active';
            })
-       }
+       } */
        }, []);
 
+       const onClick = (event) => {
+            event.currentTarget.classList.add('active');
+       }
 
     
     return(
@@ -32,25 +35,25 @@ function Nav () {
                 <span className="left">←</span>
                     <ul>
                         <li>
-                            <Link to='/mercury' className="btn">Mercury</Link>
+                            <Link to='/mercury' onClick={onClick} className="btn">Mercury</Link>
                         </li>
                         <li>
-                            <Link to='/venus' id="venus" className="btn">Venus</Link>
+                            <Link to='/venus' onClick={onClick} id="venus" className="btn">Venus</Link>
                         </li>
                         <li>
-                            <Link to='/' className="btn">Mars</Link>
+                            <Link to='/' onClick={onClick} className="btn">Mars</Link>
                         </li>
                         <li>
-                            <Link to='/jupiter' className="btn">Jupiter</Link>
+                            <Link to='/jupiter' onClick={onClick} className="btn">Jupiter</Link>
                         </li>
                         <li>
-                            <Link to='/saturn' className="btn">Saturn</Link>
+                            <Link to='/saturn' onClick={onClick} className="btn">Saturn</Link>
                         </li>
                         <li>
-                            <Link to='/uranus' className="btn">Uranus</Link>
+                            <Link to='/uranus' onClick={onClick} className="btn">Uranus</Link>
                         </li>
                         <li>
-                            <Link to='/neptune' className="btn">Neptune</Link>
+                            <Link to='/neptune' onClick={onClick} className="btn">Neptune</Link>
                         </li>
                     </ul>
                     <span className="right">→</span>
