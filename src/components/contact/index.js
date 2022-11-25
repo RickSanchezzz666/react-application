@@ -4,6 +4,7 @@ import WebFont from 'webfontloader';
 import Input from './input'
 import ArrowToTop from "./arrow-up";
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Contact() {
     useEffect(() => {
@@ -22,7 +23,7 @@ function Contact() {
                 <div id="tv">
                     <span className="contact-text">Put you information here:</span>
                     <div className="contact-input"><Input /></div>
-                    <div className="contact-padding"><button className="contact-button-send">Send message</button></div>
+                    <div className="contact-padding"><Link to='/'><button className="contact-button-send">Send message</button></Link></div>
                 </div>
             </div>
             <div className="contact-hr"><hr></hr></div>
