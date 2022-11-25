@@ -27,7 +27,6 @@
     height: 60px;
     width: 130px;
     background-color: white;
-    color: black;
     border: 0px;
     font-family: 'Poppins';
     font-weight: bold;
@@ -35,6 +34,12 @@
     transition: 0.25s;
     cursor: pointer;
 }
+
+.button-text {
+    text-decoration: none;
+    color: black;
+}
+
 
 .help-button:hover {
     background-color: #cccccc;

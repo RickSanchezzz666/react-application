@@ -10,6 +10,7 @@ import Jupiter from './components/component3/jupiter';
 import Saturn from './components/component3/saturn';
 import Uranus from './components/component3/uranus';
 import Neptune from './components/component3/neptune';
+import Contact from './components/contact'
 import Error from './components/error';
 import { useEffect } from 'react';
 
@@ -19,25 +20,31 @@ function App() {
       }, []);
 
     return(
-        <div className='pages'>
-            <div className='page-1'><Component1 /></div>
-            <div className='page-2'><Component2 /></div>
-            <div className='page-3'>
-            <BrowserRouter>
-                <Routes>
-                    <Route path='/mercury' element={<Mercury />} />
-                    <Route path='/venus' element={<Venus />} />
-                    <Route path='/' element={<Component3 />} />
-                    <Route path='/jupiter' element={<Jupiter />} />
-                    <Route path='/saturn' element={<Saturn />} />
-                    <Route path='/uranus' element={<Uranus />} />
-                    <Route path='/neptune' element={<Neptune />} />
-                    <Route path='*' element={<Error />} />
-                </Routes>
-            </BrowserRouter></div>
-            <div className='page-4'><Component4 /></div>
-    </div>
+            <div className='pages'>
+                <div className='page-1'><Component1 /></div>
+                <div className='page-2'><Component2 /></div>
+                <div className='page-3'>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path='/mercury' element={<Mercury />} />
+                        <Route path='/venus' element={<Venus />} />
+                        <Route path='/' element={<Component3 />} />
+                        <Route path='/jupiter' element={<Jupiter />} />
+                        <Route path='/saturn' element={<Saturn />} />
+                        <Route path='/uranus' element={<Uranus />} />
+                        <Route path='/neptune' element={<Neptune />} />
+                        <Route path='/contact' element={<Contact />} />
+                        <Route path='*' element={<Error />} />
+                    </Routes>
+                </BrowserRouter>
+                </div>
+                <div className='page-4'><Component4 /></div>
+            </div>
+        
     );
 }
 
 export default App;
+
+
+//<Route path='/contact' element={<Contact />} />
