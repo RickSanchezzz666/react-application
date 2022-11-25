@@ -13,13 +13,13 @@ function Planet(props) {
         });
        }, []);
 
-       const { ref, inView} = useInView({triggerOnce: true});
+       const { ref, inView} = useInView({triggerOnce: true, threshold: 0.2});
        let animation = document.getElementsByClassName('image');
-       let addAnim = animation.className += ' planetAnimation';
+       let addAnim = animation.className = 'planetAnimation';
 
     return(
     <div ref={ref} className="card">
-      <img className={`${inView ? addAnim : ''}`} src={props.image}></img>
+      <img className={`${inView ? addAnim : 'planet-opacity '}`} src={props.image}></img>
       <div className="cont"><div className="text">{props.text}</div><a href={props.link} className="read">Read more →</a></div>
     </div>
     );
