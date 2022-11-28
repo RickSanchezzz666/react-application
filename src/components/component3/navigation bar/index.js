@@ -1,27 +1,16 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './style.css';
 import WebFont from 'webfontloader';
 import { useEffect } from 'react';
 
-function Nav () {
+function Nav() {
     useEffect(() => {
         WebFont.load({
           google: {
             families: ['Quicksand', 'Heebo']
           }
         });
-
-        let btnContainer = document.getElementById('navBar');
-        let buttons = btnContainer.getElementsByClassName('btn');
-       for(let i = 0; i < buttons.length; i++) {
-           buttons[i].addEventListener('click', function() {
-                    let current = document.getElementsByClassName('active');
-                    current[0].className = current[0].className.replace('active');
-                    this.className += ' active';
-           })
-       }
-    
        }, []);
 
     return(
@@ -31,25 +20,25 @@ function Nav () {
                 <span className="left">←</span>
                     <ul>
                         <li>
-                            <Link to='/mercury' id="mercury-btn " className="btn">Mercury</Link>
+                            <NavLink to='/mercury'>Mercury</NavLink>
                         </li>
                         <li>
-                            <Link to='/venus' id="venus-btn" className="btn">Venus</Link>
+                            <NavLink to='/venus'>Venus</NavLink>
                         </li>
                         <li>
-                            <Link to='/' id="mars-btn" className="btn active">Mars</Link>
+                            <NavLink to='/'>Mars</NavLink>
                         </li>
                         <li>
-                            <Link to='/jupiter' id="jupiter-btn" className="btn">Jupiter</Link>
+                            <NavLink to='/jupiter'>Jupiter</NavLink>
                         </li>
                         <li>
-                            <Link to='/saturn' id="saturn-btn" className="btn">Saturn</Link>
+                            <NavLink to='/saturn'>Saturn</NavLink>
                         </li>
                         <li>
-                            <Link to='/uranus' id="uranus-btn" className="btn">Uranus</Link>
+                            <NavLink to='/uranus'>Uranus</NavLink>
                         </li>
                         <li>
-                            <Link to='/neptune' id="neptune-btn" className="btn">Neptune</Link>
+                            <NavLink to='/neptune'>Neptune</NavLink>
                         </li>
                     </ul>
                     <span className="right">→</span>

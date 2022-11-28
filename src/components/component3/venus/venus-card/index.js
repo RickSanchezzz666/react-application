@@ -29,7 +29,7 @@ function Venus() {
                 </div>
                 <div className="grid-2">
                 <span ref={ref2} className="sub-title"><img className={`${visible2 ? addAnim2 : ''}`} src={image2}></img><br></br><span className="sub-title"><br></br>Hottest surface in Solar System</span></span>
-                <span ref={ref4} className="sub-title"><img className={`${visible4 ? addAnim4 : ''}`} src={image4}></img><br></br><span className="sub-title"><br></br>Brightest Star in Night sky</span></span>
+                <span ref={ref4} className="sub-title"><img className={`${visible4 ? addAnim4 : ''}`} src={image4}></img><br></br><span className="sub-title"><br></br>Brightest Luminary in Night sky</span></span>
                 </div>
             </div>
             <span className="more"><a className="see-more" href="https://solarsystem.nasa.gov/planets/venus/overview/">See more</a></span>
