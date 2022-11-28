@@ -11,6 +11,8 @@
 .card {
     display: flex;
     justify-content: center;
+    height: 27%;
+    width: 50%;
 }
 
 .card:nth-child(1) {
@@ -23,17 +25,17 @@
 }
 
 .card:nth-child(3) {
-    margin-left: 19%;
+    margin-left: 35%;
 }
 
 .card:nth-child(3) > img {
-    height: 320px;
-    width: 320px;
+    height: 122%;
+    width: 32%;
 }
 
 .card img {
-    height: 270px;
-    width: 270px;
+    height: 100%;
+    width: 27.5%;
     filter: drop-shadow(10px 10px 13px black);
 }
 
