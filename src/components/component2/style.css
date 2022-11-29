@@ -1,0 +1,10 @@
+.carousel-wrapper {
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
