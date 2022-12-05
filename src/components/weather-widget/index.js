@@ -8,7 +8,7 @@ function WeatherWidget (props) {
 
  useEffect(() => {
   axios
-   .get(`http://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=`)
+   .get(`http://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=`)//моя апі 03224bd9ced99c81469eae9d7c7e2675, та що в ігнорі
    .then(response => {
     setData(response.data);
    });
