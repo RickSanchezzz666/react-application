@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script src="./js/index.js"></script>
+ <link href="./css/stylr.css" rel="stylesheet">
+</head>
+
+<!--
+ 1. Add new article when we click on "Add new Article"
+ 1a. Show error message if one the fields not have data
+ 1b. Create preview of article
+ 2. When I click on article it must be deleted
+ 2a. Delete process must have nice animation
+ 3. All new articles must be saved in local storage and after load must be showed
+-->
+
+<body>
+ <div id="new-article">
+  <div>Title: <input id="title"></div>
+  <div>Description: <textarea id="description"></textarea></div>
+  <div>Content:<textarea id="content"></textarea></div>
+  <div>
+   <div id="add-new-article"> Add new Article</div>
+  </div>
+ </div>
+ <div id="container"></div>
+</body>
+
+</html>
