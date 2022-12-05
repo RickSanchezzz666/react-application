@@ -2,10 +2,12 @@
 .widget-weather {
   width: 600px;
   box-sizing: border-box;
-  aspect-ratio: 1 / 0.8;
+  aspect-ratio: 1 / 0.4;
   border-radius: 57px;
-  background: #212130;
-  box-shadow: inset 28px -28px 56px #181824, inset -28px 28px 56px #2a2a3c;
+  background: #2f2f44;
+  -webkit-box-shadow: 3px 3px 15px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 15px 8px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 15px 8px rgba(0,0,0,0.75);
   padding: 57px;
   color: whitesmoke;
 }
