@@ -22,12 +22,16 @@ results_1.forEach(characterName => {
     if (!charachters.includes(name)) {
       charachters.push(name);
     }
-    charachtersSpeeches.push(texts);
+    for(let num = 0; charachters.length; num += 1) {
+      if(results_1 === charachters[num]) {
+        charachtersSpeeches`${charachters[num]}`.push(texts);
+      }
+    }
   })
 })
 
 console.log(charachters);
 
 for(let num = 0; num < charachters.length; num += 1) {
-      fs.writeFileSync(`${charachters[num]}.txt`, `${charachtersSpeeches[num]}`)
+      fs.writeFileSync(`${charachters[num]}.txt`, `${charachtersSpeeches`${charachters[num]}`}`)
 }
